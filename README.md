@@ -1,1 +1,1 @@
-# MCDA-Decision-Model-for-data-center-location
+# MCDM for data center location
