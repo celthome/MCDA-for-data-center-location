@@ -4,8 +4,9 @@ this script cleans the death-rate-from-natural-disasters-gbd.csv file to only co
 average of disaster related deaths of all countries and selected regions
 """
 
-import pandas as pd
 import os
+
+import pandas as pd
 
 # Get the directory of the current script
 script_dir = os.path.dirname(os.path.abspath(__file__))
