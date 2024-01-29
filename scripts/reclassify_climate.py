@@ -1,3 +1,9 @@
+"""
+Author: Dominik Neumann, Celina Thomé
+Takes a given koppen climate zone subtypes geotiff of the world, reclassifies the subtypes into general climate zones.
+Manually set "fitness" values for each climate zone. Script creates new geotiff, plots it and saves the plot.
+"""
+
 import numpy as np
 import rasterio
 import matplotlib.pyplot as plt

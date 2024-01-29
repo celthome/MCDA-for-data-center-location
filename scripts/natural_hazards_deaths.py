@@ -5,7 +5,6 @@ average of disaster related deaths of all countries and selected regions
 """
 
 import os
-
 import pandas as pd
 
 # Get the directory of the current script
