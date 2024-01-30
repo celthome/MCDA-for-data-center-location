@@ -1,9 +1,3 @@
-"""
-Author: Dominik Neumann, Celina Thomé
-this script cleans the death-rate-from-natural-disasters-gbd.csv file to only contain the 30-year
-average of disaster related deaths of all countries and selected regions
-"""
-
 import os
 import pandas as pd
 
@@ -22,10 +16,15 @@ df = pd.read_csv(file_path)
 # Rename the 4th column to "Deaths" using its index (3)
 df = df.rename(columns={df.columns[3]: "Deaths"})
 
+# Print basic statistics for the "Deaths" column
+print("Basic Statistics for 'Deaths' Column:")
+print(df["Deaths"].describe())
+
 # Group the data by "Entity" aka country and calculate the average rate of deaths for each country
 average_rates = df.groupby("Entity")["Deaths"].mean().reset_index()
 
 # Print the result
+print("\nAverage Rates of Deaths for Each Country:")
 print(average_rates)
 
 # Replace 'output_file.csv' with the desired output file path
