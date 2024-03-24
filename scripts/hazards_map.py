@@ -40,11 +40,11 @@ merged_gdf['Classified_Deaths'] = merged_gdf['Classified_Deaths'].cat.add_catego
 fig, ax = plt.subplots(figsize=(18, 18), dpi=300)
 
 # Plot the GeoDataFrame with classified values (excluding 0)
-plot = merged_gdf[merged_gdf['Classified_Deaths'] != 0].plot(ax=ax, column='Classified_Deaths', cmap='viridis', linewidth=0.8, edgecolor='0.8', legend=False)
+plot = merged_gdf[merged_gdf['Classified_Deaths'] != 0].plot(ax=ax, column='Classified_Deaths', cmap='plasma', linewidth=0.8, edgecolor='0.8', legend=False)
 
 # Create colorbar
 norm = Normalize(vmin=1, vmax=10)
-sm = ScalarMappable(cmap='viridis', norm=norm)
+sm = ScalarMappable(cmap='plasma', norm=norm)
 sm.set_array([])  # Fake array for ScalarMappable with colorbar
 
 # Add colorbar to the plot

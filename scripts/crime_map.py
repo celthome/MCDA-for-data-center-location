@@ -41,7 +41,7 @@ ax.set_axis_off()
 plt.tight_layout()
 
 # Save the plot
-plt.savefig(output_plot_path, format='png', bbox_inches='tight')
+plt.savefig(output_plot_path, format='png', bbox_inches='tight', dpi=300)
 plt.show()
 
 # Save the merged GeoDataFrame back to GeoJSON
