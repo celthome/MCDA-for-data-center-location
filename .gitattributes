@@ -1,4 +1,4 @@
-/Users/celinathome/Library/CloudStorage/OneDrive-Persönlich/UNI/Master/1.[[:space:]]Semester_MA/FOSSGIS/MCDM-for-data-center-location/data/output/administrative_boundaries_all.geojson filter=lfs diff=lfs merge=lfs -text
 data/output/administrative_boundaries_all.geojson filter=lfs diff=lfs merge=lfs -text
 data/output/water.geojson filter=lfs diff=lfs merge=lfs -text
 data/output/water_area.geojson filter=lfs diff=lfs merge=lfs -text
+data/output/powerline_distance.geojson filter=lfs diff=lfs merge=lfs -text
