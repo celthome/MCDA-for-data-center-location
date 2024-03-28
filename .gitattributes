@@ -1,3 +1,5 @@
 data/output/administrative_boundaries_all.geojson filter=lfs diff=lfs merge=lfs -text
 data/output/water.geojson filter=lfs diff=lfs merge=lfs -text
 data/output/water_area.geojson filter=lfs diff=lfs merge=lfs -text
+data/output/powerline_distance.geojson filter=lfs diff=lfs merge=lfs -text
+data/output/powerplant_distance.geojson filter=lfs diff=lfs merge=lfs -text
