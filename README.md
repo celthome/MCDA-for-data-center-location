@@ -11,3 +11,7 @@ Thererfore, we had the mission this question:
 
 ## Requirements
 Clone the repository and execute the scripts. All requirements should be downloaded at the beginning of the script. In some cases you need to exchange 'YOUR-API-KEY' with your own API key from f. e. ORS. To do so, simply follow the instruction/link in the code behind the hahstag in that line (#) and log in. 
+
+
+## Limitations
+Since we have 175 centroids in our grid and we calculate bike, car and foot as walking distances (175*3= 525) we get to the limit of the free openrouteservice api. It can only process 500 requests per day.
