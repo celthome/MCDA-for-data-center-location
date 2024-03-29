@@ -3,3 +3,12 @@ data/output/water.geojson filter=lfs diff=lfs merge=lfs -text
 data/output/water_area.geojson filter=lfs diff=lfs merge=lfs -text
 data/output/powerline_distance.geojson filter=lfs diff=lfs merge=lfs -text
 data/output/powerplant_distance.geojson filter=lfs diff=lfs merge=lfs -text
+data/output/distance_to_water.geojson filter=lfs diff=lfs merge=lfs -text
+data/output/powerlines_distance.geojson filter=lfs diff=lfs merge=lfs -text
+data/output/water_distance.geojson filter=lfs diff=lfs merge=lfs -text
+data/output/classified_power_plants.geojson filter=lfs diff=lfs merge=lfs -text
+data/output/powerplants_class_distance.geojson filter=lfs diff=lfs merge=lfs -text
+data/output/powerlines_class_distance.geojson filter=lfs diff=lfs merge=lfs -text
+data/output/telecom_points_class_distance.geojson filter=lfs diff=lfs merge=lfs -text
+data/output/water_area_classified.geojson filter=lfs diff=lfs merge=lfs -text
+data/output/centroids_classified.geojson filter=lfs diff=lfs merge=lfs -text
