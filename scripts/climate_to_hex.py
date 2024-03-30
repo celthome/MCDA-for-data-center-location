@@ -1,25 +1,22 @@
 import geopandas as gpd
 import rasterio
-from scripts.raster_vals_to_hex import assign_raster_values_to_hexagons
 
-# Define your parameters
-hexagon_file = "../data/grid.geojson"
-raster_file = "../clean_data/climate_reclass.tif"
-output_column = "Climate"  # The column to write the results to
-
-# Load the hexagon GeoJSON file
-hexagons = gpd.read_file(hexagon_file)
-print(hexagons.crs)
+# Load the GeoJSON file
+centroids = gpd.read_file('../data/output/centroids_classified_disaster_crime_merged.geojson')
 
 # Open the raster file
-with rasterio.open(raster_file) as src:
-    print(src.crs)
+with rasterio.open('../data/clean/climate_reclass.tif') as src:
+    # Initialize a list to store the climate values
+    climate_values = []
 
-    # Convert the GeoDataFrame to the same CRS as the raster file
-    hexagons = hexagons.to_crs(src.crs)
+    # Iterate over each row in the GeoDataFrame
+    for _, centroid in centroids.iterrows():
+        # Get the raster value at the centroid's coordinates
+        for val in src.sample([(centroid.geometry.x, centroid.geometry.y)]):
+            climate_values.append(val[0])
 
-# Save the converted GeoDataFrame back to the hexagon_file
-hexagons.to_file(hexagon_file, driver='GeoJSON')
+# Add the climate values to the GeoDataFrame
+centroids['climate'] = climate_values
 
-# Call the function
-assign_raster_values_to_hexagons(hexagon_file, raster_file, output_column)
+# Save the GeoDataFrame to a new GeoJSON file
+centroids.to_file('../data/output/centroids_final.geojson', driver='GeoJSON')

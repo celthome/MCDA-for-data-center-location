@@ -12,6 +12,11 @@ def reclassify_vector(input_file, output_file, attribute, num_classes, class_ran
     for i in range(num_classes):
         min_val, max_val = class_ranges[i]
         new_val = class_values[i]
+        # Convert the entire column to float type
+        gdf[attribute] = gdf[attribute].astype(float)
+        # Handle NaN values
+        gdf[attribute] = gdf[attribute].fillna(0)
+
         gdf.loc[(gdf[attribute] >= min_val) & (gdf[attribute] <= max_val), 'reclassified'] = new_val
 
     # Write the reclassified vector to output file
