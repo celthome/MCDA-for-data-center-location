@@ -19,41 +19,6 @@ You might have problems cloning all data from the repository (might be empty fil
 Since we have 175 centroids in our grid and we calculate bike, car and foot as walking distances (175 * 3 = 525) we get to the limit of the standard openrouteservice API key. It can only process 500 requests per day.
  
 ## Folder structure
-MCDA-for-data-center-location  
-|_ documentation  
-    |_ report  
-    |_ README  
-    |_ flowchart 
 
-|_ data
-    |_ input
-        |_ baden_wuerttemberg.geojson
-        |_ death-rate-from-natural-disasters-gbd.csv
-        |_ koppen_geiger_1991_2020.tif
-        |_ organized_crime_index.csv
-    |_ output
-        |_ isochrones
-            |_ isochrones_cycling-regular
-            |_ isochrones_foot-walking
-            |_ isochrones_driving-car
-        |_ download
-            |_ powerplants
-        |_ centroids
-            |_
-        |_ reclassified
-            |_
-        |_ grid
-        |_ processed_data
-    |_ result
-|_ plots
-|_ scripts
-    |_ 01_download_data
-    |_ 02_
-    |_ 03_
-    |_ 04_
-    |_ 05_
+<img width="409" alt="Bildschirmfoto 2024-04-15 um 19 40 07" src="https://github.com/celthome/MCDA-for-data-center-location/assets/146074360/ddf02d2d-beb0-4269-8123-e3e1d7f9bfcc">
 
-
-
-
-    
