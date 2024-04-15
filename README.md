@@ -40,8 +40,6 @@ MCDA-for-data-center-location
             |_
         |_ reclassified
             |_
-        |_ weighted
-            |_ 
     |_ result
 |_ plots
 |_ scripts
