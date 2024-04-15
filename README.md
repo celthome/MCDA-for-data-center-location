@@ -18,11 +18,11 @@ Since we have 175 centroids in our grid and we calculate bike, car and foot as w
 
 
 ## Folder structure
-MCDA-for-data-center-location
-|_ documentation
-    |_ report
-    |_ README
-    |_ flowchart
+MCDA-for-data-center-location  
+|_ documentation  
+    |_ report  
+    |_ README  
+    |_ flowchart  
 |_ data
     |_ input
         |_ baden_wuerttemberg.geojson
