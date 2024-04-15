@@ -1,4 +1,4 @@
-# MCDM for data center location
+# MCDA for data center location
 
 ## Introduction
 
