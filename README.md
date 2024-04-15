@@ -41,6 +41,8 @@ MCDA-for-data-center-location
             |_
         |_ reclassified
             |_
+        |_ grid
+        |_ processed_data
     |_ result
 |_ plots
 |_ scripts
