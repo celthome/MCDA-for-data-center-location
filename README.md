@@ -13,9 +13,10 @@ Thererfore, we had the mission this question:
 
 ## Requirements
 Clone the repository and execute the scripts. All requirements should be downloaded at the beginning of the script. In some cases you need to exchange 'YOUR-API-KEY' with your own API key from f. e. ORS. To do so, simply follow the instruction/link in the code behind the hahstag in that line (#) and log in. 
+You might have problems cloning all data from the repository (might be empty files), since some data were larger than GitHubs regulations. We used git lfs to push those data. Simply download these files via the UI of GitHub.
 
 ## Limitations
-Since we have 175 centroids in our grid and we calculate bike, car and foot as walking distances (175*3= 525) we get to the limit of the free openrouteservice api. It can only process 500 requests per day.
+Since we have 175 centroids in our grid and we calculate bike, car and foot as walking distances (175 * 3 = 525) we get to the limit of the standard openrouteservice API key. It can only process 500 requests per day.
  
 ## Folder structure
 MCDA-for-data-center-location  
@@ -46,8 +47,11 @@ MCDA-for-data-center-location
     |_ result
 |_ plots
 |_ scripts
-    |_ download_data
-    |_
+    |_ 01_download_data
+    |_ 02_
+    |_ 03_
+    |_ 04_
+    |_ 05_
 
 
 
