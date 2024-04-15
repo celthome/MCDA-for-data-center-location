@@ -15,3 +15,40 @@ Clone the repository and execute the scripts. All requirements should be downloa
 
 ## Limitations
 Since we have 175 centroids in our grid and we calculate bike, car and foot as walking distances (175*3= 525) we get to the limit of the free openrouteservice api. It can only process 500 requests per day.
+
+
+## Folder structure
+MCDA-for-data-center-location
+|_ documentation
+    |_ report
+    |_ README
+    |_ flowchart
+|_ data
+    |_ input
+        |_ baden_wuerttemberg.geojson
+        |_ death-rate-from-natural-disasters-gbd.csv
+        |_ koppen_geiger_1991_2020.tif
+        |_ organized_crime_index.csv
+    |_ output
+        |_ isochrones
+            |_ isochrones_cycling-regular
+            |_ isochrones_foot-walking
+            |_ isochrones_driving-car
+        |_ download
+            |_ powerplants
+        |_ centroids
+            |_
+        |_ reclassified
+            |_
+        |_ weighted
+            |_ 
+    |_ result
+|_ plots
+|_ scripts
+    |_ download_data
+    |_
+
+
+
+
+    
